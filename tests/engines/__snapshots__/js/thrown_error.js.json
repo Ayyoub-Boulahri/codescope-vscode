@@ -1,0 +1,442 @@
+{
+ "language": "javascript",
+ "code": "function check(x) {\n  if (x < 0) {\n    throw new RangeError('negative: ' + x);\n  }\n  return x;\n}\ntry {\n  check(-1);\n} catch (e) {\n  console.log('caught', e.message);\n}\ncheck(-2);\n",
+ "steps": [
+  {
+   "index": 0,
+   "line": 7,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 1,
+   "line": 8,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 8,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 2,
+   "line": 1,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 8,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "check",
+     "line": 1,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": -1
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 3,
+   "line": 2,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 8,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "check",
+     "line": 2,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": -1
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 4,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 8,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "check",
+     "line": 3,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": -1
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 5,
+   "line": 3,
+   "event": "exception",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 8,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "check",
+     "line": 3,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": -1
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [],
+   "exception": {
+    "name": "RangeError",
+    "message": "negative: -1",
+    "line": 3
+   }
+  },
+  {
+   "index": 6,
+   "line": 10,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 10,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      },
+      "e": {
+       "type": "ref",
+       "id": "o1"
+      }
+     },
+     "localsOrder": [
+      "check",
+      "e"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "message",
+       "value": {
+        "type": "primitive",
+        "value": "negative: -1"
+       }
+      }
+     ],
+     "className": "RangeError"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 7,
+   "line": 12,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 12,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 20,
+   "loops": []
+  },
+  {
+   "index": 8,
+   "line": 1,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 12,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "check",
+     "line": 1,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": -2
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 20,
+   "loops": []
+  },
+  {
+   "index": 9,
+   "line": 2,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 12,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "check",
+     "line": 2,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": -2
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 20,
+   "loops": []
+  },
+  {
+   "index": 10,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 12,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "check",
+     "line": 3,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": -2
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 20,
+   "loops": []
+  },
+  {
+   "index": 11,
+   "line": 3,
+   "event": "exception",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 12,
+     "locals": {
+      "check": {
+       "type": "function",
+       "name": "check"
+      }
+     },
+     "localsOrder": [
+      "check"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "check",
+     "line": 3,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": -2
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 20,
+   "loops": [],
+   "exception": {
+    "name": "RangeError",
+    "message": "negative: -2",
+    "line": 3
+   }
+  }
+ ],
+ "stdout": "caught negative: -1\n",
+ "error": {
+  "name": "RangeError",
+  "message": "negative: -2",
+  "line": 3
+ }
+}

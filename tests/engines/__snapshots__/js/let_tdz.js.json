@@ -1,0 +1,224 @@
+{
+ "language": "javascript",
+ "code": "function pick(k) {\n  switch (k) {\n    case 1:\n      let label = 'one';\n      return label;\n    default:\n      return 'other';\n  }\n}\nconsole.log(pick(2));\n",
+ "steps": [
+  {
+   "index": 0,
+   "line": 10,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 10,
+     "locals": {
+      "pick": {
+       "type": "function",
+       "name": "pick"
+      }
+     },
+     "localsOrder": [
+      "pick"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 1,
+   "line": 1,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 10,
+     "locals": {
+      "pick": {
+       "type": "function",
+       "name": "pick"
+      }
+     },
+     "localsOrder": [
+      "pick"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "pick",
+     "line": 1,
+     "locals": {
+      "k": {
+       "type": "primitive",
+       "value": 2
+      }
+     },
+     "localsOrder": [
+      "k"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 2,
+   "line": 2,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 10,
+     "locals": {
+      "pick": {
+       "type": "function",
+       "name": "pick"
+      }
+     },
+     "localsOrder": [
+      "pick"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "pick",
+     "line": 2,
+     "locals": {
+      "k": {
+       "type": "primitive",
+       "value": 2
+      }
+     },
+     "localsOrder": [
+      "k"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 3,
+   "line": 7,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 10,
+     "locals": {
+      "pick": {
+       "type": "function",
+       "name": "pick"
+      }
+     },
+     "localsOrder": [
+      "pick"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "pick",
+     "line": 7,
+     "locals": {
+      "k": {
+       "type": "primitive",
+       "value": 2
+      },
+      "label": {
+       "type": "truncated",
+       "preview": "<uninitialized>"
+      }
+     },
+     "localsOrder": [
+      "k",
+      "label"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 4,
+   "line": 7,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 10,
+     "locals": {
+      "pick": {
+       "type": "function",
+       "name": "pick"
+      }
+     },
+     "localsOrder": [
+      "pick"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "pick",
+     "line": 7,
+     "locals": {
+      "k": {
+       "type": "primitive",
+       "value": 2
+      },
+      "label": {
+       "type": "truncated",
+       "preview": "<uninitialized>"
+      }
+     },
+     "localsOrder": [
+      "k",
+      "label"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [],
+   "returnValue": {
+    "type": "primitive",
+    "value": "other"
+   }
+  },
+  {
+   "index": 5,
+   "line": 10,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 10,
+     "locals": {
+      "pick": {
+       "type": "function",
+       "name": "pick"
+      }
+     },
+     "localsOrder": [
+      "pick"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 6,
+   "loops": [],
+   "returnValue": {
+    "type": "undefined"
+   }
+  }
+ ],
+ "stdout": "other\n"
+}

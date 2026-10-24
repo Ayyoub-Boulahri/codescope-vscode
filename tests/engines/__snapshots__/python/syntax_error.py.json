@@ -1,0 +1,11 @@
+{
+ "language": "python",
+ "code": "def broken(:\n    pass\n",
+ "steps": [],
+ "stdout": "",
+ "error": {
+  "name": "SyntaxError",
+  "message": "invalid syntax",
+  "line": 1
+ }
+}

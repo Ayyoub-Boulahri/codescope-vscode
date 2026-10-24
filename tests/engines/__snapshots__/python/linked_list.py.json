@@ -1,0 +1,3595 @@
+{
+ "language": "python",
+ "code": "class Node:\n    def __init__(self, value, next=None):\n        self.value = value\n        self.next = next\n\nhead = Node(1, Node(2, Node(3)))\nalias = head\ndata = {\"a\": [1, 2], \"b\": (3, 4)}\nseen = {3, 1, 2}\ncur = head\nwhile cur:\n    cur = cur.next\n",
+ "steps": [
+  {
+   "index": 0,
+   "line": 1,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 1,
+   "line": 1,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    },
+    {
+     "id": "f2",
+     "name": "Node",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 2,
+   "line": 1,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    },
+    {
+     "id": "f2",
+     "name": "Node",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 3,
+   "line": 2,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    },
+    {
+     "id": "f2",
+     "name": "Node",
+     "line": 2,
+     "locals": {},
+     "localsOrder": []
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 4,
+   "line": 2,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    },
+    {
+     "id": "f2",
+     "name": "Node",
+     "line": 2,
+     "locals": {},
+     "localsOrder": []
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [],
+   "returnValue": {
+    "type": "primitive",
+    "value": null,
+    "pyType": "NoneType"
+   }
+  },
+  {
+   "index": 5,
+   "line": 6,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 6,
+   "line": 2,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 3,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "primitive",
+       "value": null,
+       "pyType": "NoneType"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 7,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 3,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "primitive",
+       "value": null,
+       "pyType": "NoneType"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 8,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 3,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "primitive",
+       "value": null,
+       "pyType": "NoneType"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 9,
+   "line": 4,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 3,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "primitive",
+       "value": null,
+       "pyType": "NoneType"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [],
+   "returnValue": {
+    "type": "primitive",
+    "value": null,
+    "pyType": "NoneType"
+   }
+  },
+  {
+   "index": 10,
+   "line": 2,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f4",
+     "name": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h2"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "ref",
+       "id": "h1"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 11,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f4",
+     "name": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h2"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "ref",
+       "id": "h1"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 12,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f4",
+     "name": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h2"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "ref",
+       "id": "h1"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 13,
+   "line": 4,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f4",
+     "name": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h2"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "ref",
+       "id": "h1"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [],
+   "returnValue": {
+    "type": "primitive",
+    "value": null,
+    "pyType": "NoneType"
+   }
+  },
+  {
+   "index": 14,
+   "line": 2,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f5",
+     "name": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 1,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "ref",
+       "id": "h2"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 15,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f5",
+     "name": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 1,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "ref",
+       "id": "h2"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 16,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f5",
+     "name": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 1,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "ref",
+       "id": "h2"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 17,
+   "line": 4,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 6,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f5",
+     "name": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "value": {
+       "type": "primitive",
+       "value": 1,
+       "pyType": "int"
+      },
+      "next": {
+       "type": "ref",
+       "id": "h2"
+      }
+     },
+     "localsOrder": [
+      "self",
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [],
+   "returnValue": {
+    "type": "primitive",
+    "value": null,
+    "pyType": "NoneType"
+   }
+  },
+  {
+   "index": 18,
+   "line": 7,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 7,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 19,
+   "line": 8,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 20,
+   "line": 9,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 9,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "data": {
+       "type": "ref",
+       "id": "h4"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias",
+      "data"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h4": {
+     "id": "h4",
+     "kind": "dict",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h5"
+       }
+      },
+      {
+       "key": {
+        "type": "primitive",
+        "value": "b",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h6"
+       }
+      }
+     ]
+    },
+    "h5": {
+     "id": "h5",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h6": {
+     "id": "h6",
+     "kind": "tuple",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 4,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 21,
+   "line": 10,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 10,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "data": {
+       "type": "ref",
+       "id": "h4"
+      },
+      "seen": {
+       "type": "ref",
+       "id": "h7"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias",
+      "data",
+      "seen"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h4": {
+     "id": "h4",
+     "kind": "dict",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h5"
+       }
+      },
+      {
+       "key": {
+        "type": "primitive",
+        "value": "b",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h6"
+       }
+      }
+     ]
+    },
+    "h5": {
+     "id": "h5",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h6": {
+     "id": "h6",
+     "kind": "tuple",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 4,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h7": {
+     "id": "h7",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 22,
+   "line": 11,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 11,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "data": {
+       "type": "ref",
+       "id": "h4"
+      },
+      "seen": {
+       "type": "ref",
+       "id": "h7"
+      },
+      "cur": {
+       "type": "ref",
+       "id": "h3"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias",
+      "data",
+      "seen",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h4": {
+     "id": "h4",
+     "kind": "dict",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h5"
+       }
+      },
+      {
+       "key": {
+        "type": "primitive",
+        "value": "b",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h6"
+       }
+      }
+     ]
+    },
+    "h5": {
+     "id": "h5",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h6": {
+     "id": "h6",
+     "kind": "tuple",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 4,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h7": {
+     "id": "h7",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "while",
+     "startLine": 11,
+     "endLine": 12,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "line": 12,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 12,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "data": {
+       "type": "ref",
+       "id": "h4"
+      },
+      "seen": {
+       "type": "ref",
+       "id": "h7"
+      },
+      "cur": {
+       "type": "ref",
+       "id": "h3"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias",
+      "data",
+      "seen",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h4": {
+     "id": "h4",
+     "kind": "dict",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h5"
+       }
+      },
+      {
+       "key": {
+        "type": "primitive",
+        "value": "b",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h6"
+       }
+      }
+     ]
+    },
+    "h5": {
+     "id": "h5",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h6": {
+     "id": "h6",
+     "kind": "tuple",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 4,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h7": {
+     "id": "h7",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "while",
+     "startLine": 11,
+     "endLine": 12,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "line": 11,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 11,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "data": {
+       "type": "ref",
+       "id": "h4"
+      },
+      "seen": {
+       "type": "ref",
+       "id": "h7"
+      },
+      "cur": {
+       "type": "ref",
+       "id": "h2"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias",
+      "data",
+      "seen",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h4": {
+     "id": "h4",
+     "kind": "dict",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h5"
+       }
+      },
+      {
+       "key": {
+        "type": "primitive",
+        "value": "b",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h6"
+       }
+      }
+     ]
+    },
+    "h5": {
+     "id": "h5",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h6": {
+     "id": "h6",
+     "kind": "tuple",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 4,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h7": {
+     "id": "h7",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "while",
+     "startLine": 11,
+     "endLine": 12,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 25,
+   "line": 12,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 12,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "data": {
+       "type": "ref",
+       "id": "h4"
+      },
+      "seen": {
+       "type": "ref",
+       "id": "h7"
+      },
+      "cur": {
+       "type": "ref",
+       "id": "h2"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias",
+      "data",
+      "seen",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h4": {
+     "id": "h4",
+     "kind": "dict",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h5"
+       }
+      },
+      {
+       "key": {
+        "type": "primitive",
+        "value": "b",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h6"
+       }
+      }
+     ]
+    },
+    "h5": {
+     "id": "h5",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h6": {
+     "id": "h6",
+     "kind": "tuple",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 4,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h7": {
+     "id": "h7",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "while",
+     "startLine": 11,
+     "endLine": 12,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "line": 11,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 11,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "data": {
+       "type": "ref",
+       "id": "h4"
+      },
+      "seen": {
+       "type": "ref",
+       "id": "h7"
+      },
+      "cur": {
+       "type": "ref",
+       "id": "h1"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias",
+      "data",
+      "seen",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h4": {
+     "id": "h4",
+     "kind": "dict",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h5"
+       }
+      },
+      {
+       "key": {
+        "type": "primitive",
+        "value": "b",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h6"
+       }
+      }
+     ]
+    },
+    "h5": {
+     "id": "h5",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h6": {
+     "id": "h6",
+     "kind": "tuple",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 4,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h7": {
+     "id": "h7",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "while",
+     "startLine": 11,
+     "endLine": 12,
+     "iteration": 3
+    }
+   ]
+  },
+  {
+   "index": 27,
+   "line": 12,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 12,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "data": {
+       "type": "ref",
+       "id": "h4"
+      },
+      "seen": {
+       "type": "ref",
+       "id": "h7"
+      },
+      "cur": {
+       "type": "ref",
+       "id": "h1"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias",
+      "data",
+      "seen",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h4": {
+     "id": "h4",
+     "kind": "dict",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h5"
+       }
+      },
+      {
+       "key": {
+        "type": "primitive",
+        "value": "b",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h6"
+       }
+      }
+     ]
+    },
+    "h5": {
+     "id": "h5",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h6": {
+     "id": "h6",
+     "kind": "tuple",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 4,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h7": {
+     "id": "h7",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "while",
+     "startLine": 11,
+     "endLine": 12,
+     "iteration": 3
+    }
+   ]
+  },
+  {
+   "index": 28,
+   "line": 11,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 11,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "data": {
+       "type": "ref",
+       "id": "h4"
+      },
+      "seen": {
+       "type": "ref",
+       "id": "h7"
+      },
+      "cur": {
+       "type": "primitive",
+       "value": null,
+       "pyType": "NoneType"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias",
+      "data",
+      "seen",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h4": {
+     "id": "h4",
+     "kind": "dict",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h5"
+       }
+      },
+      {
+       "key": {
+        "type": "primitive",
+        "value": "b",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h6"
+       }
+      }
+     ]
+    },
+    "h5": {
+     "id": "h5",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h6": {
+     "id": "h6",
+     "kind": "tuple",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 4,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h7": {
+     "id": "h7",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "while",
+     "startLine": 11,
+     "endLine": 12,
+     "iteration": 4
+    }
+   ]
+  },
+  {
+   "index": 29,
+   "line": 11,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 11,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "h3"
+      },
+      "data": {
+       "type": "ref",
+       "id": "h4"
+      },
+      "seen": {
+       "type": "ref",
+       "id": "h7"
+      },
+      "cur": {
+       "type": "primitive",
+       "value": null,
+       "pyType": "NoneType"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "alias",
+      "data",
+      "seen",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "h3": {
+     "id": "h3",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h2"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h2": {
+     "id": "h2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "h1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h1": {
+     "id": "h1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null,
+        "pyType": "NoneType"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "h4": {
+     "id": "h4",
+     "kind": "dict",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h5"
+       }
+      },
+      {
+       "key": {
+        "type": "primitive",
+        "value": "b",
+        "pyType": "str"
+       },
+       "value": {
+        "type": "ref",
+        "id": "h6"
+       }
+      }
+     ]
+    },
+    "h5": {
+     "id": "h5",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h6": {
+     "id": "h6",
+     "kind": "tuple",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 4,
+        "pyType": "int"
+       }
+      }
+     ]
+    },
+    "h7": {
+     "id": "h7",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [],
+   "returnValue": {
+    "type": "primitive",
+    "value": null,
+    "pyType": "NoneType"
+   }
+  }
+ ],
+ "stdout": ""
+}

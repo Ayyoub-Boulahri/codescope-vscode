@@ -1,0 +1,310 @@
+{
+ "language": "python",
+ "code": "name = input(\"Name: \")\ncount = int(input())\nfor k in range(count):\n    print(name, k)\n",
+ "steps": [
+  {
+   "index": 0,
+   "line": 1,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 1,
+   "line": 2,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 2,
+     "locals": {
+      "name": {
+       "type": "primitive",
+       "value": "Ada",
+       "pyType": "str"
+      }
+     },
+     "localsOrder": [
+      "name"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 10,
+   "loops": []
+  },
+  {
+   "index": 2,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 3,
+     "locals": {
+      "name": {
+       "type": "primitive",
+       "value": "Ada",
+       "pyType": "str"
+      },
+      "count": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "name",
+      "count"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 12,
+   "loops": [
+    {
+     "id": "f1:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 4,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 4,
+     "locals": {
+      "name": {
+       "type": "primitive",
+       "value": "Ada",
+       "pyType": "str"
+      },
+      "count": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      },
+      "k": {
+       "type": "primitive",
+       "value": 0,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "name",
+      "count",
+      "k"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 12,
+   "loops": [
+    {
+     "id": "f1:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 4,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 3,
+     "locals": {
+      "name": {
+       "type": "primitive",
+       "value": "Ada",
+       "pyType": "str"
+      },
+      "count": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      },
+      "k": {
+       "type": "primitive",
+       "value": 0,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "name",
+      "count",
+      "k"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 18,
+   "loops": [
+    {
+     "id": "f1:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 4,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 4,
+     "locals": {
+      "name": {
+       "type": "primitive",
+       "value": "Ada",
+       "pyType": "str"
+      },
+      "count": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      },
+      "k": {
+       "type": "primitive",
+       "value": 1,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "name",
+      "count",
+      "k"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 18,
+   "loops": [
+    {
+     "id": "f1:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 4,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 3,
+     "locals": {
+      "name": {
+       "type": "primitive",
+       "value": "Ada",
+       "pyType": "str"
+      },
+      "count": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      },
+      "k": {
+       "type": "primitive",
+       "value": 1,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "name",
+      "count",
+      "k"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 24,
+   "loops": [
+    {
+     "id": "f1:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 4,
+     "iteration": 3
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "line": 3,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 3,
+     "locals": {
+      "name": {
+       "type": "primitive",
+       "value": "Ada",
+       "pyType": "str"
+      },
+      "count": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      },
+      "k": {
+       "type": "primitive",
+       "value": 1,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "name",
+      "count",
+      "k"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 24,
+   "loops": [],
+   "returnValue": {
+    "type": "primitive",
+    "value": null,
+    "pyType": "NoneType"
+   }
+  }
+ ],
+ "stdout": "Name: Ada\n2\nAda 0\nAda 1\n"
+}

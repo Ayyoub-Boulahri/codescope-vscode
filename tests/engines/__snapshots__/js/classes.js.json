@@ -1,0 +1,885 @@
+{
+ "language": "javascript",
+ "code": "class Node {\n  constructor(value, next = null) {\n    this.value = value;\n    this.next = next;\n  }\n}\nconst head = new Node(1, new Node(2));\nlet cur = head;\nwhile (cur) {\n  cur = cur.next;\n}\n",
+ "steps": [
+  {
+   "index": 0,
+   "line": 1,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 1,
+   "line": 7,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 2,
+   "line": 2,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "Node.constructor",
+     "line": 2,
+     "locals": {
+      "value": {
+       "type": "primitive",
+       "value": 2
+      },
+      "next": {
+       "type": "primitive",
+       "value": null
+      }
+     },
+     "localsOrder": [
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 3,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "Node.constructor",
+     "line": 3,
+     "locals": {
+      "value": {
+       "type": "primitive",
+       "value": 2
+      },
+      "next": {
+       "type": "primitive",
+       "value": null
+      }
+     },
+     "localsOrder": [
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 4,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "Node.constructor",
+     "line": 4,
+     "locals": {
+      "value": {
+       "type": "primitive",
+       "value": 2
+      },
+      "next": {
+       "type": "primitive",
+       "value": null
+      }
+     },
+     "localsOrder": [
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 5,
+   "line": 4,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "Node.constructor",
+     "line": 4,
+     "locals": {
+      "value": {
+       "type": "primitive",
+       "value": 2
+      },
+      "next": {
+       "type": "primitive",
+       "value": null
+      }
+     },
+     "localsOrder": [
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [],
+   "returnValue": {
+    "type": "undefined"
+   }
+  },
+  {
+   "index": 6,
+   "line": 2,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "Node.constructor",
+     "line": 2,
+     "locals": {
+      "value": {
+       "type": "primitive",
+       "value": 1
+      },
+      "next": {
+       "type": "ref",
+       "id": "o1"
+      }
+     },
+     "localsOrder": [
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 7,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "Node.constructor",
+     "line": 3,
+     "locals": {
+      "value": {
+       "type": "primitive",
+       "value": 1
+      },
+      "next": {
+       "type": "ref",
+       "id": "o1"
+      }
+     },
+     "localsOrder": [
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 8,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "Node.constructor",
+     "line": 4,
+     "locals": {
+      "value": {
+       "type": "primitive",
+       "value": 1
+      },
+      "next": {
+       "type": "ref",
+       "id": "o1"
+      }
+     },
+     "localsOrder": [
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 9,
+   "line": 4,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      }
+     },
+     "localsOrder": [
+      "Node"
+     ]
+    },
+    {
+     "id": "f3",
+     "name": "Node.constructor",
+     "line": 4,
+     "locals": {
+      "value": {
+       "type": "primitive",
+       "value": 1
+      },
+      "next": {
+       "type": "ref",
+       "id": "o1"
+      }
+     },
+     "localsOrder": [
+      "value",
+      "next"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [],
+   "returnValue": {
+    "type": "undefined"
+   }
+  },
+  {
+   "index": 10,
+   "line": 8,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 8,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "o2"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head"
+     ]
+    }
+   ],
+   "heap": {
+    "o2": {
+     "id": "o2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "o1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "o1": {
+     "id": "o1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 11,
+   "line": 9,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 9,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "o2"
+      },
+      "cur": {
+       "type": "ref",
+       "id": "o2"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "o2": {
+     "id": "o2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "o1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "o1": {
+     "id": "o1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 12,
+   "line": 10,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 10,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "o2"
+      },
+      "cur": {
+       "type": "ref",
+       "id": "o2"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "o2": {
+     "id": "o2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "o1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "o1": {
+     "id": "o1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:9",
+     "kind": "while",
+     "startLine": 9,
+     "endLine": 11,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "line": 10,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 10,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "o2"
+      },
+      "cur": {
+       "type": "ref",
+       "id": "o1"
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "o2": {
+     "id": "o2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "o1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "o1": {
+     "id": "o1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:9",
+     "kind": "while",
+     "startLine": 9,
+     "endLine": 11,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "line": 10,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 10,
+     "locals": {
+      "Node": {
+       "type": "function",
+       "name": "class Node"
+      },
+      "head": {
+       "type": "ref",
+       "id": "o2"
+      },
+      "cur": {
+       "type": "primitive",
+       "value": null
+      }
+     },
+     "localsOrder": [
+      "Node",
+      "head",
+      "cur"
+     ]
+    }
+   ],
+   "heap": {
+    "o2": {
+     "id": "o2",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "ref",
+        "id": "o1"
+       }
+      }
+     ],
+     "className": "Node"
+    },
+    "o1": {
+     "id": "o1",
+     "kind": "instance",
+     "entries": [
+      {
+       "key": "value",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": "next",
+       "value": {
+        "type": "primitive",
+        "value": null
+       }
+      }
+     ],
+     "className": "Node"
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [],
+   "returnValue": {
+    "type": "undefined"
+   }
+  }
+ ],
+ "stdout": ""
+}

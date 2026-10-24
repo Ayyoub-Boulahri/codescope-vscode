@@ -1,0 +1,1302 @@
+{
+ "language": "python",
+ "code": "def find_max(arr):\n    best = arr[0]\n    for i in range(1, len(arr) + 1):   # bug: off by one\n        if arr[i] > best:\n            best = arr[i]\n    return best\n\nprint(find_max([3, 7, 2, 9]))\n",
+ "steps": [
+  {
+   "index": 0,
+   "line": 1,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 1,
+   "line": 8,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 2,
+   "line": 1,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 1,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      }
+     },
+     "localsOrder": [
+      "arr"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 3,
+   "line": 2,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 2,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      }
+     },
+     "localsOrder": [
+      "arr"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 4,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 3,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 3,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 4,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 3,
+       "pyType": "int"
+      },
+      "i": {
+       "type": "primitive",
+       "value": 1,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best",
+      "i"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "line": 5,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 5,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 3,
+       "pyType": "int"
+      },
+      "i": {
+       "type": "primitive",
+       "value": 1,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best",
+      "i"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 3,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 7,
+       "pyType": "int"
+      },
+      "i": {
+       "type": "primitive",
+       "value": 1,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best",
+      "i"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 4,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 7,
+       "pyType": "int"
+      },
+      "i": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best",
+      "i"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 3,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 7,
+       "pyType": "int"
+      },
+      "i": {
+       "type": "primitive",
+       "value": 2,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best",
+      "i"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 3
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 4,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 7,
+       "pyType": "int"
+      },
+      "i": {
+       "type": "primitive",
+       "value": 3,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best",
+      "i"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 3
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "line": 5,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 5,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 7,
+       "pyType": "int"
+      },
+      "i": {
+       "type": "primitive",
+       "value": 3,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best",
+      "i"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 3
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 3,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 9,
+       "pyType": "int"
+      },
+      "i": {
+       "type": "primitive",
+       "value": 3,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best",
+      "i"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 4
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 4,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 9,
+       "pyType": "int"
+      },
+      "i": {
+       "type": "primitive",
+       "value": 4,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best",
+      "i"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 4
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "line": 4,
+   "event": "exception",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "find_max",
+     "line": 4,
+     "locals": {
+      "arr": {
+       "type": "ref",
+       "id": "h1"
+      },
+      "best": {
+       "type": "primitive",
+       "value": 9,
+       "pyType": "int"
+      },
+      "i": {
+       "type": "primitive",
+       "value": 4,
+       "pyType": "int"
+      }
+     },
+     "localsOrder": [
+      "arr",
+      "best",
+      "i"
+     ]
+    }
+   ],
+   "heap": {
+    "h1": {
+     "id": "h1",
+     "kind": "list",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 3,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 7,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "primitive",
+        "value": 2,
+        "pyType": "int"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 9,
+        "pyType": "int"
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f2:3",
+     "kind": "for",
+     "startLine": 3,
+     "endLine": 5,
+     "iteration": 4
+    }
+   ],
+   "exception": {
+    "name": "IndexError",
+    "message": "list index out of range",
+    "line": 4
+   }
+  },
+  {
+   "index": 15,
+   "line": 8,
+   "event": "exception",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "<module>",
+     "line": 8,
+     "locals": {
+      "find_max": {
+       "type": "function",
+       "name": "find_max"
+      }
+     },
+     "localsOrder": [
+      "find_max"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [],
+   "exception": {
+    "name": "IndexError",
+    "message": "list index out of range",
+    "line": 8
+   }
+  }
+ ],
+ "stdout": "",
+ "error": {
+  "name": "IndexError",
+  "message": "list index out of range",
+  "line": 4
+ }
+}

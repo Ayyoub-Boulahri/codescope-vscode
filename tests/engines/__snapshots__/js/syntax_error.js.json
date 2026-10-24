@@ -1,0 +1,11 @@
+{
+ "language": "javascript",
+ "code": "function broken( {\n  return 1;\n}\n",
+ "steps": [],
+ "stdout": "",
+ "error": {
+  "name": "SyntaxError",
+  "message": "Unexpected keyword 'return'.",
+  "line": 2
+ }
+}

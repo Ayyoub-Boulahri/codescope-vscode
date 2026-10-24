@@ -1,0 +1,1088 @@
+{
+ "language": "javascript",
+ "code": "let n = 0;\ndo {\n  n++;\n} while (n < 2);\nfor (const ch of 'ab') {\n  n += ch.length;\n}\nfor (const key in { a: 1 }) {\n  n += key.length;\n}\nouter: for (let i = 0; i < 3; i++) {\n  for (let j = 0; j < 3; j++) {\n    if (j === 1) continue outer;\n    if (i === 2) break outer;\n  }\n}\nswitch (n) {\n  case 5:\n    n = 0;\n    break;\n  default:\n    n = -1;\n}\nconst double = (x) => x * 2;\nconsole.log(double(n));\n",
+ "steps": [
+  {
+   "index": 0,
+   "line": 1,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 1,
+   "line": 2,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 2,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 2,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 3,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:2",
+     "kind": "do-while",
+     "startLine": 2,
+     "endLine": 4,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 3,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 1
+      }
+     },
+     "localsOrder": [
+      "n"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:2",
+     "kind": "do-while",
+     "startLine": 2,
+     "endLine": 4,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "line": 5,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 5,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 2
+      }
+     },
+     "localsOrder": [
+      "n"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 5,
+   "line": 6,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 6,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 2
+      },
+      "ch": {
+       "type": "primitive",
+       "value": "a"
+      }
+     },
+     "localsOrder": [
+      "n",
+      "ch"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:5",
+     "kind": "for-of",
+     "startLine": 5,
+     "endLine": 7,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "line": 6,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 6,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 3
+      },
+      "ch": {
+       "type": "primitive",
+       "value": "b"
+      }
+     },
+     "localsOrder": [
+      "n",
+      "ch"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:5",
+     "kind": "for-of",
+     "startLine": 5,
+     "endLine": 7,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "line": 8,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 8,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 4
+      }
+     },
+     "localsOrder": [
+      "n"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 8,
+   "line": 9,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 9,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 4
+      },
+      "key": {
+       "type": "primitive",
+       "value": "a"
+      }
+     },
+     "localsOrder": [
+      "n",
+      "key"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:8",
+     "kind": "for-in",
+     "startLine": 8,
+     "endLine": 10,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "line": 11,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 11,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      }
+     },
+     "localsOrder": [
+      "n"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 10,
+   "line": 12,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 12,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "line": 13,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 13,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 0
+      },
+      "j": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i",
+      "j"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 1
+    },
+    {
+     "id": "f1:12",
+     "kind": "for",
+     "startLine": 12,
+     "endLine": 15,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "line": 14,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 14,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 0
+      },
+      "j": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i",
+      "j"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 1
+    },
+    {
+     "id": "f1:12",
+     "kind": "for",
+     "startLine": 12,
+     "endLine": 15,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "line": 13,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 13,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 0
+      },
+      "j": {
+       "type": "primitive",
+       "value": 1
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i",
+      "j"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 1
+    },
+    {
+     "id": "f1:12",
+     "kind": "for",
+     "startLine": 12,
+     "endLine": 15,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "line": 12,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 12,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 1
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "line": 13,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 13,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 1
+      },
+      "j": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i",
+      "j"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 2
+    },
+    {
+     "id": "f1:12",
+     "kind": "for",
+     "startLine": 12,
+     "endLine": 15,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "line": 14,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 14,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 1
+      },
+      "j": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i",
+      "j"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 2
+    },
+    {
+     "id": "f1:12",
+     "kind": "for",
+     "startLine": 12,
+     "endLine": 15,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "line": 13,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 13,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 1
+      },
+      "j": {
+       "type": "primitive",
+       "value": 1
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i",
+      "j"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 2
+    },
+    {
+     "id": "f1:12",
+     "kind": "for",
+     "startLine": 12,
+     "endLine": 15,
+     "iteration": 2
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "line": 12,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 12,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 2
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 3
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "line": 13,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 13,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 2
+      },
+      "j": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i",
+      "j"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 3
+    },
+    {
+     "id": "f1:12",
+     "kind": "for",
+     "startLine": 12,
+     "endLine": 15,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "line": 14,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 14,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      },
+      "i": {
+       "type": "primitive",
+       "value": 2
+      },
+      "j": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n",
+      "i",
+      "j"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [
+    {
+     "id": "f1:11",
+     "kind": "for",
+     "startLine": 11,
+     "endLine": 16,
+     "iteration": 3
+    },
+    {
+     "id": "f1:12",
+     "kind": "for",
+     "startLine": 12,
+     "endLine": 15,
+     "iteration": 1
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "line": 17,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 17,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      }
+     },
+     "localsOrder": [
+      "n"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 22,
+   "line": 19,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 19,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 5
+      }
+     },
+     "localsOrder": [
+      "n"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 23,
+   "line": 20,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 20,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 24,
+   "line": 24,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 24,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "n"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 25,
+   "line": 25,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 25,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 0
+      },
+      "double": {
+       "type": "function",
+       "name": "double"
+      }
+     },
+     "localsOrder": [
+      "n",
+      "double"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 26,
+   "line": 24,
+   "event": "call",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 25,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 0
+      },
+      "double": {
+       "type": "function",
+       "name": "double"
+      }
+     },
+     "localsOrder": [
+      "n",
+      "double"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "double",
+     "line": 24,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 27,
+   "line": 24,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 25,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 0
+      },
+      "double": {
+       "type": "function",
+       "name": "double"
+      }
+     },
+     "localsOrder": [
+      "n",
+      "double"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "double",
+     "line": 24,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 28,
+   "line": 24,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 25,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 0
+      },
+      "double": {
+       "type": "function",
+       "name": "double"
+      }
+     },
+     "localsOrder": [
+      "n",
+      "double"
+     ]
+    },
+    {
+     "id": "f2",
+     "name": "double",
+     "line": 24,
+     "locals": {
+      "x": {
+       "type": "primitive",
+       "value": 0
+      }
+     },
+     "localsOrder": [
+      "x"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": [],
+   "returnValue": {
+    "type": "primitive",
+    "value": 0
+   }
+  },
+  {
+   "index": 29,
+   "line": 25,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 25,
+     "locals": {
+      "n": {
+       "type": "primitive",
+       "value": 0
+      },
+      "double": {
+       "type": "function",
+       "name": "double"
+      }
+     },
+     "localsOrder": [
+      "n",
+      "double"
+     ]
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 2,
+   "loops": [],
+   "returnValue": {
+    "type": "undefined"
+   }
+  }
+ ],
+ "stdout": "0\n"
+}

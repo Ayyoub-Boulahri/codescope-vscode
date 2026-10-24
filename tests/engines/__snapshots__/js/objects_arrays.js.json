@@ -1,0 +1,888 @@
+{
+ "language": "javascript",
+ "code": "const point = { x: 1, y: 2 };\nconst alias = point;\nalias.x = 10;\nconst list = [1, [2, 3], { z: 4 }];\nlist.push(5);\nconst m = new Map([['a', 1]]);\nconst s = new Set([1, 2]);\nconsole.log(point, list);\n",
+ "steps": [
+  {
+   "index": 0,
+   "line": 1,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 1,
+     "locals": {},
+     "localsOrder": []
+    }
+   ],
+   "heap": {},
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 1,
+   "line": 2,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 2,
+     "locals": {
+      "point": {
+       "type": "ref",
+       "id": "o1"
+      }
+     },
+     "localsOrder": [
+      "point"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "x",
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": "y",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 2,
+   "line": 3,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 3,
+     "locals": {
+      "point": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "o1"
+      }
+     },
+     "localsOrder": [
+      "point",
+      "alias"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "x",
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": "y",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 3,
+   "line": 4,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 4,
+     "locals": {
+      "point": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "o1"
+      }
+     },
+     "localsOrder": [
+      "point",
+      "alias"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "x",
+       "value": {
+        "type": "primitive",
+        "value": 10
+       }
+      },
+      {
+       "key": "y",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 4,
+   "line": 5,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 5,
+     "locals": {
+      "point": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "list": {
+       "type": "ref",
+       "id": "o2"
+      }
+     },
+     "localsOrder": [
+      "point",
+      "alias",
+      "list"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "x",
+       "value": {
+        "type": "primitive",
+        "value": 10
+       }
+      },
+      {
+       "key": "y",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      }
+     ]
+    },
+    "o2": {
+     "id": "o2",
+     "kind": "array",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "ref",
+        "id": "o3"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "ref",
+        "id": "o4"
+       }
+      }
+     ]
+    },
+    "o3": {
+     "id": "o3",
+     "kind": "array",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 3
+       }
+      }
+     ]
+    },
+    "o4": {
+     "id": "o4",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "z",
+       "value": {
+        "type": "primitive",
+        "value": 4
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 5,
+   "line": 6,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 6,
+     "locals": {
+      "point": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "list": {
+       "type": "ref",
+       "id": "o2"
+      }
+     },
+     "localsOrder": [
+      "point",
+      "alias",
+      "list"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "x",
+       "value": {
+        "type": "primitive",
+        "value": 10
+       }
+      },
+      {
+       "key": "y",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      }
+     ]
+    },
+    "o2": {
+     "id": "o2",
+     "kind": "array",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "ref",
+        "id": "o3"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "ref",
+        "id": "o4"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 5
+       }
+      }
+     ]
+    },
+    "o3": {
+     "id": "o3",
+     "kind": "array",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 3
+       }
+      }
+     ]
+    },
+    "o4": {
+     "id": "o4",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "z",
+       "value": {
+        "type": "primitive",
+        "value": 4
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 6,
+   "line": 7,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 7,
+     "locals": {
+      "point": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "list": {
+       "type": "ref",
+       "id": "o2"
+      },
+      "m": {
+       "type": "ref",
+       "id": "o5"
+      }
+     },
+     "localsOrder": [
+      "point",
+      "alias",
+      "list",
+      "m"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "x",
+       "value": {
+        "type": "primitive",
+        "value": 10
+       }
+      },
+      {
+       "key": "y",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      }
+     ]
+    },
+    "o2": {
+     "id": "o2",
+     "kind": "array",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "ref",
+        "id": "o3"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "ref",
+        "id": "o4"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 5
+       }
+      }
+     ]
+    },
+    "o3": {
+     "id": "o3",
+     "kind": "array",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 3
+       }
+      }
+     ]
+    },
+    "o4": {
+     "id": "o4",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "z",
+       "value": {
+        "type": "primitive",
+        "value": 4
+       }
+      }
+     ]
+    },
+    "o5": {
+     "id": "o5",
+     "kind": "map",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a"
+       },
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 7,
+   "line": 8,
+   "event": "line",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 8,
+     "locals": {
+      "point": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "list": {
+       "type": "ref",
+       "id": "o2"
+      },
+      "m": {
+       "type": "ref",
+       "id": "o5"
+      },
+      "s": {
+       "type": "ref",
+       "id": "o6"
+      }
+     },
+     "localsOrder": [
+      "point",
+      "alias",
+      "list",
+      "m",
+      "s"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "x",
+       "value": {
+        "type": "primitive",
+        "value": 10
+       }
+      },
+      {
+       "key": "y",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      }
+     ]
+    },
+    "o2": {
+     "id": "o2",
+     "kind": "array",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "ref",
+        "id": "o3"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "ref",
+        "id": "o4"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 5
+       }
+      }
+     ]
+    },
+    "o3": {
+     "id": "o3",
+     "kind": "array",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 3
+       }
+      }
+     ]
+    },
+    "o4": {
+     "id": "o4",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "z",
+       "value": {
+        "type": "primitive",
+        "value": 4
+       }
+      }
+     ]
+    },
+    "o5": {
+     "id": "o5",
+     "kind": "map",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a"
+       },
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      }
+     ]
+    },
+    "o6": {
+     "id": "o6",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 0,
+   "loops": []
+  },
+  {
+   "index": 8,
+   "line": 8,
+   "event": "return",
+   "stack": [
+    {
+     "id": "f1",
+     "name": "(global)",
+     "line": 8,
+     "locals": {
+      "point": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "alias": {
+       "type": "ref",
+       "id": "o1"
+      },
+      "list": {
+       "type": "ref",
+       "id": "o2"
+      },
+      "m": {
+       "type": "ref",
+       "id": "o5"
+      },
+      "s": {
+       "type": "ref",
+       "id": "o6"
+      }
+     },
+     "localsOrder": [
+      "point",
+      "alias",
+      "list",
+      "m",
+      "s"
+     ]
+    }
+   ],
+   "heap": {
+    "o1": {
+     "id": "o1",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "x",
+       "value": {
+        "type": "primitive",
+        "value": 10
+       }
+      },
+      {
+       "key": "y",
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      }
+     ]
+    },
+    "o2": {
+     "id": "o2",
+     "kind": "array",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "ref",
+        "id": "o3"
+       }
+      },
+      {
+       "key": 2,
+       "value": {
+        "type": "ref",
+        "id": "o4"
+       }
+      },
+      {
+       "key": 3,
+       "value": {
+        "type": "primitive",
+        "value": 5
+       }
+      }
+     ]
+    },
+    "o3": {
+     "id": "o3",
+     "kind": "array",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 3
+       }
+      }
+     ]
+    },
+    "o4": {
+     "id": "o4",
+     "kind": "object",
+     "entries": [
+      {
+       "key": "z",
+       "value": {
+        "type": "primitive",
+        "value": 4
+       }
+      }
+     ]
+    },
+    "o5": {
+     "id": "o5",
+     "kind": "map",
+     "entries": [
+      {
+       "key": {
+        "type": "primitive",
+        "value": "a"
+       },
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      }
+     ]
+    },
+    "o6": {
+     "id": "o6",
+     "kind": "set",
+     "entries": [
+      {
+       "key": 0,
+       "value": {
+        "type": "primitive",
+        "value": 1
+       }
+      },
+      {
+       "key": 1,
+       "value": {
+        "type": "primitive",
+        "value": 2
+       }
+      }
+     ]
+    }
+   },
+   "stdoutLength": 41,
+   "loops": [],
+   "returnValue": {
+    "type": "undefined"
+   }
+  }
+ ],
+ "stdout": "{ x: 10, y: 2 } [1, [2, 3], { z: 4 }, 5]\n"
+}
