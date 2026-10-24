@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+
+/* VS Code puts the theme kind on <body>; `dark:` follows it. */
+@custom-variant dark (&:where(.vscode-dark, .vscode-dark *, .vscode-high-contrast, .vscode-high-contrast *));
+
+/* Design tokens. Neutral surfaces come from the VS Code theme; the accent stays CodeScope purple.
+   Semantic colors come from Tailwind: accent = current step, amber = changed, emerald = new,
+   cyan = heap/references, violet = loops, rose = errors. */
+:root {
+  --cs-canvas: var(--vscode-editor-background);
+  --cs-panel: var(--vscode-editorWidget-background, var(--vscode-editor-background));
+  --cs-raised: color-mix(in srgb, var(--vscode-foreground) 7%, transparent);
+  --cs-line: var(
+    --vscode-widget-border,
+    color-mix(in srgb, var(--vscode-foreground) 14%, transparent)
+  );
+  --cs-ink: var(--vscode-foreground);
+  --cs-muted: var(--vscode-descriptionForeground);
+  --cs-faint: var(
+    --vscode-disabledForeground,
+    color-mix(in srgb, var(--vscode-foreground) 45%, transparent)
+  );
+  --cs-accent: #6d4aff;
+  --cs-accent-soft: rgb(109 74 255 / 0.1);
+}
+.vscode-dark,
+.vscode-high-contrast {
+  --cs-accent: #8b74ff;
+  --cs-accent-soft: rgb(139 116 255 / 0.14);
+}
+
+@theme inline {
+  --font-sans: var(--vscode-font-family), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--vscode-editor-font-family), ui-monospace, Menlo, Consolas, monospace;
+  --color-canvas: var(--cs-canvas);
+  --color-panel: var(--cs-panel);
+  --color-raised: var(--cs-raised);
+  --color-line: var(--cs-line);
+  --color-ink: var(--cs-ink);
+  --color-muted: var(--cs-muted);
+  --color-faint: var(--cs-faint);
+  --color-accent: var(--cs-accent);
+  --color-accent-soft: var(--cs-accent-soft);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  /* VS Code's default webview styles pad the body. */
+  padding: 0;
+  @apply bg-canvas font-sans text-ink antialiased;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cs-line) transparent;
+}
+
+/* Timeline slider */
+.cs-range {
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--cs-accent) var(--fill, 0%),
+    var(--cs-line) var(--fill, 0%)
+  );
+  cursor: pointer;
+}
+.cs-range:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.cs-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: var(--cs-panel);
+  border: 3px solid var(--cs-accent);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.25);
+}
