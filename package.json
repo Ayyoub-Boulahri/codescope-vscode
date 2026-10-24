@@ -1,0 +1,159 @@
+{
+  "name": "codescope",
+  "displayName": "CodeScope",
+  "description": "Step through Python and JavaScript execution: call stack, variables, loops, heap objects and variable history.",
+  "version": "0.1.0",
+  "publisher": "ayyoubboulahri",
+  "license": "MIT",
+  "preview": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ayyoub-Boulahri/codescope-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/Ayyoub-Boulahri/codescope-vscode/issues"
+  },
+  "homepage": "https://codescope-viz.netlify.app",
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#121218",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Debuggers",
+    "Education",
+    "Visualization"
+  ],
+  "keywords": [
+    "visualizer",
+    "python",
+    "javascript",
+    "trace",
+    "learning"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false,
+      "description": "CodeScope runs the code in the file to trace it, so it is disabled in Restricted Mode."
+    },
+    "virtualWorkspaces": {
+      "supported": false,
+      "description": "Programs run from files on disk."
+    }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "codescope.visualizeFile",
+        "title": "Visualize File",
+        "category": "CodeScope",
+        "icon": "$(telescope)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "codescope.visualizeFile",
+          "when": "editorLangId == python || editorLangId == javascript",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "codescope.visualizeFile",
+          "when": "editorLangId == python || editorLangId == javascript"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "CodeScope",
+      "properties": {
+        "codescope.pythonPath": {
+          "type": "string",
+          "default": "",
+          "scope": "resource",
+          "markdownDescription": "Python interpreter used to trace Python files. Empty: the interpreter selected in the Python extension, or `python3` (`python` on Windows)."
+        },
+        "codescope.maxSteps": {
+          "type": "number",
+          "default": 5000,
+          "minimum": 100,
+          "description": "Stop recording after this many steps (protects against infinite loops)."
+        },
+        "codescope.timeoutSeconds": {
+          "type": "number",
+          "default": 5,
+          "minimum": 1,
+          "description": "Stop a run after this many seconds."
+        }
+      }
+    },
+    "colors": [
+      {
+        "id": "codescope.currentLineBackground",
+        "description": "Background of the line CodeScope is currently showing.",
+        "defaults": {
+          "dark": "#8b74ff24",
+          "light": "#6d4aff1a",
+          "highContrast": "#8b74ff40",
+          "highContrastLight": "#6d4aff33"
+        }
+      },
+      {
+        "id": "codescope.errorLineBackground",
+        "description": "Background of the line that raised an error.",
+        "defaults": {
+          "dark": "#f43f5e29",
+          "light": "#f43f5e29",
+          "highContrast": "#f43f5e4d",
+          "highContrastLight": "#f43f5e4d"
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node esbuild.mjs && vite build",
+    "watch:extension": "node esbuild.mjs --watch",
+    "watch:webview": "vite build --watch",
+    "typecheck": "tsc -p tsconfig.extension.json && tsc -p tsconfig.webview.json",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "package": "npm run build && vsce package",
+    "vscode:prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@babel/generator": "^8.0.6",
+    "@babel/parser": "^8.0.7",
+    "@babel/traverse": "^8.0.7",
+    "@babel/types": "^8.0.6",
+    "@eslint/js": "^9.39.5",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@types/vscode": "~1.90.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "@vscode/vsce": "^4.0.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "framer-motion": "^14.3.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.2",
+    "vite": "^6.4.4",
+    "vitest": "^3.2.7",
+    "zustand": "^5.0.15"
+  }
+}

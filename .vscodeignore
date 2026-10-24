@@ -1,0 +1,9 @@
+**
+!dist/*.js
+!dist/tracer.py
+!dist/webview/**
+!media/**
+!package.json
+!README.md
+!CHANGELOG.md
+!LICENSE
