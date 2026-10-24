@@ -42,7 +42,7 @@ npm run typecheck
 npm run lint
 npm run test         # engines + process runner; PYTHON=... picks the interpreter (snapshots need 3.14),
                      # OLD_PYTHON=<3.9 interpreter> also checks the version guard
-npm run package      # codescope-<version>.vsix
+npm run package      # codescope-viz-<version>.vsix
 ```
 
 Press `F5` in VS Code to open an Extension Development Host with the extension loaded. For

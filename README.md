@@ -1,4 +1,4 @@
-# CodeScope
+# CodeScope Viz
 
 **See your code run.** CodeScope traces a Python or JavaScript file and lets you step through it
 line by line: call-stack frames, variables, loops with iteration counters, and objects on the heap
@@ -15,7 +15,7 @@ errors easy to spot. It's made for learning, teaching, and understanding tricky 
 ## Getting started
 
 1. Open a `.py` or `.js` file.
-2. Click the **telescope** button in the editor's title bar, or run **CodeScope: Visualize File**
+2. Click the **telescope** button in the editor's title bar, or run **CodeScope Viz: Visualize File**
    from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
 3. Step through the run with the playback bar, or click in the panel and use the keyboard:
    `→` next step, `←` previous step, `Space` play/pause, `Home` / `End` first/last step.
@@ -48,9 +48,9 @@ raised an error.
 
 | Setting | Default | Description |
 |---|---|---|
-| `codescope.pythonPath` | *(empty)* | Interpreter for Python files. Empty: the one selected in the Python extension, else a `.venv` next to the file, else `python3` (`python` on Windows). |
-| `codescope.maxSteps` | `5000` | Stop recording after this many steps. |
-| `codescope.timeoutSeconds` | `5` | Stop a run after this many seconds. Raise it for programs with slow imports (e.g. `torch`). |
+| `codescopeViz.pythonPath` | *(empty)* | Interpreter for Python files. Empty: the one selected in the Python extension, else a `.venv` next to the file, else `python3` (`python` on Windows). |
+| `codescopeViz.maxSteps` | `5000` | Stop recording after this many steps. |
+| `codescopeViz.timeoutSeconds` | `5` | Stop a run after this many seconds. Raise it for programs with slow imports (e.g. `torch`). |
 
 ## Good to know
 

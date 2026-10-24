@@ -63,10 +63,10 @@ function nearbyVenv(resource: vscode.Uri): string | undefined {
   return undefined;
 }
 
-/** codescope.pythonPath, else the Python extension's interpreter, else a nearby venv, else PATH. */
+/** codescopeViz.pythonPath, else the Python extension's interpreter, else a nearby venv, else PATH. */
 export async function resolvePython(resource: vscode.Uri): Promise<Interpreter> {
   const configured = vscode.workspace
-    .getConfiguration('codescope', resource)
+    .getConfiguration('codescopeViz', resource)
     .get<string>('pythonPath')
     ?.trim();
   if (configured) return { path: configured, source: 'setting' };
@@ -80,12 +80,15 @@ export async function resolvePython(resource: vscode.Uri): Promise<Interpreter> 
 /** Let the user pick another interpreter: the Python extension's picker, or our setting. */
 export async function pickInterpreter(resource: vscode.Uri) {
   const configured = vscode.workspace
-    .getConfiguration('codescope', resource)
+    .getConfiguration('codescopeViz', resource)
     .get<string>('pythonPath');
   if (!configured?.trim() && vscode.extensions.getExtension(PYTHON_EXTENSION)) {
     await vscode.commands.executeCommand('python.setInterpreter');
   } else {
-    await vscode.commands.executeCommand('workbench.action.openSettings', 'codescope.pythonPath');
+    await vscode.commands.executeCommand(
+      'workbench.action.openSettings',
+      'codescopeViz.pythonPath',
+    );
   }
 }
 

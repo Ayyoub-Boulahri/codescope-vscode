@@ -12,14 +12,14 @@ export class LineDecorations implements vscode.Disposable {
     const icon = (name: string) => vscode.Uri.joinPath(media, `${name}.svg`);
     this.current = vscode.window.createTextEditorDecorationType({
       isWholeLine: true,
-      backgroundColor: new vscode.ThemeColor('codescope.currentLineBackground'),
+      backgroundColor: new vscode.ThemeColor('codescopeViz.currentLineBackground'),
       gutterIconPath: icon('current'),
       overviewRulerColor: '#8b74ff',
       overviewRulerLane: vscode.OverviewRulerLane.Center,
     });
     this.currentError = vscode.window.createTextEditorDecorationType({
       isWholeLine: true,
-      backgroundColor: new vscode.ThemeColor('codescope.errorLineBackground'),
+      backgroundColor: new vscode.ThemeColor('codescopeViz.errorLineBackground'),
       gutterIconPath: icon('error'),
       overviewRulerColor: '#f43f5e',
       overviewRulerLane: vscode.OverviewRulerLane.Center,

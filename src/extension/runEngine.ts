@@ -130,7 +130,7 @@ export function runEngine(req: EngineRequest, onStatus?: (message: string) => vo
         reject(
           err.code === 'ENOENT' && req.language === 'python'
             ? new Error(
-                `Python was not found at "${req.pythonPath}". Select an interpreter in the Python extension or set codescope.pythonPath.`,
+                `Python was not found at "${req.pythonPath}". Select an interpreter in the Python extension or set codescopeViz.pythonPath.`,
               )
             : err,
         ),

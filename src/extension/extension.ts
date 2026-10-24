@@ -3,7 +3,7 @@ import { CodeScopePanel, languageOf } from './panel';
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
-    vscode.commands.registerCommand('codescope.visualizeFile', (uri?: vscode.Uri) =>
+    vscode.commands.registerCommand('codescopeViz.visualizeFile', (uri?: vscode.Uri) =>
       visualize(context, uri),
     ),
   );

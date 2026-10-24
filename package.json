@@ -1,6 +1,6 @@
 {
-  "name": "codescope",
-  "displayName": "CodeScope",
+  "name": "codescope-viz",
+  "displayName": "CodeScope Viz",
   "description": "Step through Python and JavaScript execution: call stack, variables, loops, heap objects and variable history.",
   "version": "0.1.0",
   "publisher": "ayyoubboulahri",
@@ -49,43 +49,43 @@
   "contributes": {
     "commands": [
       {
-        "command": "codescope.visualizeFile",
+        "command": "codescopeViz.visualizeFile",
         "title": "Visualize File",
-        "category": "CodeScope",
+        "category": "CodeScope Viz",
         "icon": "$(telescope)"
       }
     ],
     "menus": {
       "editor/title": [
         {
-          "command": "codescope.visualizeFile",
+          "command": "codescopeViz.visualizeFile",
           "when": "editorLangId == python || editorLangId == javascript",
           "group": "navigation"
         }
       ],
       "commandPalette": [
         {
-          "command": "codescope.visualizeFile",
+          "command": "codescopeViz.visualizeFile",
           "when": "editorLangId == python || editorLangId == javascript"
         }
       ]
     },
     "configuration": {
-      "title": "CodeScope",
+      "title": "CodeScope Viz",
       "properties": {
-        "codescope.pythonPath": {
+        "codescopeViz.pythonPath": {
           "type": "string",
           "default": "",
           "scope": "resource",
           "markdownDescription": "Python interpreter used to trace Python files. Empty: the interpreter selected in the Python extension, or `python3` (`python` on Windows)."
         },
-        "codescope.maxSteps": {
+        "codescopeViz.maxSteps": {
           "type": "number",
           "default": 5000,
           "minimum": 100,
           "description": "Stop recording after this many steps (protects against infinite loops)."
         },
-        "codescope.timeoutSeconds": {
+        "codescopeViz.timeoutSeconds": {
           "type": "number",
           "default": 5,
           "minimum": 1,
@@ -95,7 +95,7 @@
     },
     "colors": [
       {
-        "id": "codescope.currentLineBackground",
+        "id": "codescopeViz.currentLineBackground",
         "description": "Background of the line CodeScope is currently showing.",
         "defaults": {
           "dark": "#8b74ff24",
@@ -105,7 +105,7 @@
         }
       },
       {
-        "id": "codescope.errorLineBackground",
+        "id": "codescopeViz.errorLineBackground",
         "description": "Background of the line that raised an error.",
         "defaults": {
           "dark": "#f43f5e29",

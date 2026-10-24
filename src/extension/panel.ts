@@ -43,7 +43,7 @@ export class CodeScopePanel implements vscode.Disposable {
     const dist = vscode.Uri.joinPath(context.extensionUri, 'dist', 'webview');
     const media = vscode.Uri.joinPath(context.extensionUri, 'media');
     this.panel = vscode.window.createWebviewPanel(
-      'codescope',
+      'codescopeViz',
       'CodeScope',
       { viewColumn: vscode.ViewColumn.Beside, preserveFocus: true },
       { enableScripts: true, retainContextWhenHidden: true, localResourceRoots: [dist] },
@@ -66,7 +66,7 @@ export class CodeScopePanel implements vscode.Disposable {
         }
       }),
       vscode.workspace.onDidChangeConfiguration((e) => {
-        if (e.affectsConfiguration('codescope.pythonPath')) this.rerunPython();
+        if (e.affectsConfiguration('codescopeViz.pythonPath')) this.rerunPython();
       }),
     );
     void onInterpreterChange(() => this.rerunPython()).then((d) =>
@@ -109,7 +109,7 @@ export class CodeScopePanel implements vscode.Disposable {
     this.post({ type: 'trace', trace: null });
     this.post({ type: 'status', status: 'running', message: 'Starting…' });
 
-    const config = vscode.workspace.getConfiguration('codescope', doc.uri);
+    const config = vscode.workspace.getConfiguration('codescopeViz', doc.uri);
     const interpreter = language === 'python' ? await resolvePython(doc.uri) : undefined;
     if (id !== this.runId) return;
     this.post({
